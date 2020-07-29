@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+body {
+  background-color: #6BF2C1;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card-white {
+  background-color: white;
+  box-shadow: 2px 6px #F2F2F2;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+
+h1, h2 {
+  color: #626262;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 3px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+p {
+  padding: 10px 0 20px 0;
+}
+
+ul {
+  color: #C2C2C2;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.btn-grey {
+  background-color: #87AFEB;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+}
+
+.btn-grey:hover {
+  background-color: #FFDD58;
+  width: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border-radius: 5%;
+}
+
+#image-resize {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.fab {
+  font-size: 60px;
+}
+
+/*.container {
+  margin: 20px auto 20px auto;
+  text-align: center;
+}*/
+
+
+
+/*.list-inline {
+  display: inline-block;
+}*/
+
+
+/*Body
+Pick a nice background-color, font-family, color, font-size and line-height for the <body>.
+Setting these font rules at the body-level will apply them on all basic text tags (<p>, <li>, etc.).
+
+Headers
+Choose a nice color and font-family for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size and line-height for headers
+Hint: small headers are more elegant. If you check out any website
+(Medium, Airbnb, etc.), you’ll see that the font-size of their headers is quite small.
+Links
+Change the color & text-decoration of all the links
+Add hover effects to links using the pseudo-class a:hover.*/
