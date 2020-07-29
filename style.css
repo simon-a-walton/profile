@@ -110,6 +110,10 @@ img {
   color: black;
 }
 
+#github:hover {
+  color: rgba(3, 255, 176, 0.5);
+}
+
 
 #github:active{
   top: 2px;
@@ -120,9 +124,9 @@ img {
   color: #B40A00;
 }
 
-/*#html {
-  color:
-}*/
+#html {
+  color: black;
+}
 
 #css {
   color: #9D91EA;
@@ -130,7 +134,7 @@ img {
 
 #java {
   font-size: 16px;
-  color: black;
+  color: #FCA4FA;
 }
 
 .text-right {
