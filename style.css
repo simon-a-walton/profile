@@ -93,9 +93,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  border-radius: 5%;
-}
 
 #image-resize {
   width: 250px;
@@ -140,6 +137,12 @@ img {
 .text-right {
   text-align: right;
   font-size: 10px;
+}
+
+#giphy {
+  width: 420px;
+  height: 320px;
+  object-fit: cover;
 }
 
 /*.container {
