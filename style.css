@@ -56,7 +56,7 @@ h1 {
 }
 
 p {
-  padding: 5px 0 5px 0;
+  padding: 15px 0 15px 0;
 
 }
 
@@ -111,7 +111,7 @@ img {
 }
 
 #github:hover {
-  color: rgba(3, 255, 176, 0.5);
+  color: rgba(3, 255, 176, 0.1);
 }
 
 
