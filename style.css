@@ -20,7 +20,8 @@
 }
 
 body {
-  background-color: rgba(3, 255, 176, 0.1);
+  background-image: url("images/3.jpg");
+  background-size: cover;
   font-family: "Source Sans Pro", "Arial", sans-serif;
   color: black;
   font-size: 16px;
@@ -108,7 +109,7 @@ a {
 }
 
 #github:hover {
-  color: #FCA4FA;
+  color: #DAA9C9;
 }
 
 
@@ -118,7 +119,7 @@ a {
 }
 
 #ruby {
-  color: #B40A00;
+  color: #D596B9;
 }
 
 #html {
@@ -126,12 +127,12 @@ a {
 }
 
 #css {
-  color: #9D91EA;
+  color: #57C2F0;
 }
 
 #java {
   font-size: 16px;
-  color: #FCA4FA;
+  color: #DAA9C9;
 }
 
 .text-right {
