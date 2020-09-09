@@ -1,64 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
 
 body {
   background-image: url("images/3.jpg");
   background-size: cover;
-  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-family: 'Cabin', sans-serif;
   color: black;
   font-size: 16px;
 }
 
 
-.container {
-  width: 500px;
+.flex-container {
+  width: 700px;
   margin: 0 auto;
 }
 
 .card-white {
   background-color: white;
   box-shadow: 2px 4px 10px 4px lightgrey;
-  margin: 20px auto 20px auto;
   text-align: center;
-  padding: 40px;
   border-radius: 4px;
 }
 
 
-h1, h2 {
-  color: #626262;
-  font-family: 'Raleway', sans-serif;
+h1, h2, h5, h6 {
+  color: black;
   font-size: 30px;
   line-height: 3px;
   font-weight: bold;
-  padding: 5px;
+  font-family: 'Cabin', sans-serif;
 }
 
-h1 {
-  font-size: 45px;
-}
-
-p {
+.intro-text p {
   padding: 15px 0 15px 0;
-
 }
 
 ul {
@@ -75,43 +50,31 @@ ul.list-inline {
 
 .list-inline > li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 4px;
 }
 
-/*.btn-grey {
-  background-color: rgba(3, 255, 176, 0.7);
-  padding: 15px 20px;
-  border-radius: 4px;
-  color: white;
+.nav-link {
+  float: left;
+  display: block;
+  right: 8px;
 }
-
-.btn-grey:hover {
-  background-color: #FFDD58;
-  width: 10%;
-}*/
-
-a {
-  text-decoration: none;
-}
-
 
 #image-resize {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 #github {
-  font-size: 60px;
+  font-size: 20px;
   position: relative;
-  color: black;
+  color: white;
 }
 
 #github:hover {
   color: #DAA9C9;
 }
-
 
 #github:active{
   top: 2px;
@@ -132,7 +95,7 @@ a {
 
 #java {
   font-size: 16px;
-  color: #DAA9C9;
+  color: #C691F7;
 }
 
 .text-right {
@@ -140,12 +103,89 @@ a {
   font-size: 10px;
 }
 
-#giphy {
-  width: 420px;
-  height: 320px;
-  object-fit: cover;
+.request-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 12px;
+  font-size: 12px;
 }
 
+.request-nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #3FB2E4;
+  border-radius: 4px;
+}
+
+.request-nav-item {
+  margin: 4px;
+}
+
+.request-nav-item:hover {
+  color: white;
+  box-shadow: 0 0 8px #E2ACD0;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: #E2ACD0;
+    box-shadow: 0 0 4px #E2ACD0;
+    font-weight: bolder;
+}
+
+.card-white img {
+    height: 320px;
+    object-fit: cover;
+}
+
+
+a {
+  text-decoration: none;
+
+}
+
+.link-style a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.inner-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.inner-card-item {
+
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .flex-container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .flex-container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .flex-container {
+    width: 350px;
+  }
+
+  .nav {
+    font-size: 10px;
+  }
+}
+
+nav {
+  flex-wrap: nowrap;
+}
 /*.container {
   margin: 20px auto 20px auto;
   text-align: center;

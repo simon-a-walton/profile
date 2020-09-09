@@ -7,26 +7,14 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
+
+
 <body>
-  <div class="container">
-    <div class="card-white">
-      <img src="images/simon-headshot.jpg" alt="Profile Image 🧗‍♂️" id="image-resize">
-      <h1>Simon Walton</h1>
-      <h2>💻 Full-Stack Developer 💻</h2>
-      <p>I'm currently being trained by the genius team <a href = "https://www.lewagon.com/london">@Le Wagon</a>. I am looking for full-time work as a Junior Full-Stack developer and will be ready to interview mid-September 2020.</p>
-
-      <ul class="list-inline">
-        <li><i class="fas fa-gem" id = "ruby"></i> <em> Ruby </em></li>
-        <li><i class="far fa-file-alt" id = "html"></i> <em> HTML </em></li>
-        <li><i class="fas fa-paint-brush" id = "css"></i> <em> CSS </em></li>
-        <li><i class="fab fa-js-square" id = "java"></i> <em> Javascript</em></li>
-      </ul>
-    </div>
-
-    <div class="card-white">
-      <h2>Connect with me!</h2>
+  <div class="flex-container">
+    <header class="d-flex justify-content-end pt-2">
       <ul class="list-inline">
        <li>
           <a href="https://github.com/simon-a-walton"><i class="fab fa-github" id="github"></i></a>
@@ -34,17 +22,119 @@
         <li>
           <a href="https://www.linkedin.com/in/simon-walton-36457323/"><i class="fab fa-linkedin" id="github"></i></a>
        </li>
+
       </ul>
+</header>
+    <div class="card-white p-4 mb-3 mx-3">
+      <img src="images/simon-headshot.jpg" alt="Profile Image 🧗‍♂️" id="image-resize">
+      <div class="intro-text pt-2">
+        <h1>Simon Walton</h1>
+        <h2>Front-End Developer</h2>
+        <p>I'm a recent graduate from Le Wagon’s Full-Stack Web Development programme with an interest in Front-End and design. A keen climber and a noob skateboarder.</p>
+      </div>
+      <ul class="list-inline">
+        <li><i class="fas fa-gem mx-1" id = "ruby"></i> <em>Ruby on Rails </em></li>
+        <li><i class="far fa-file-alt mx-1" id = "html"></i> <em>HTML5 </em></li>
+        <li><i class="fas fa-paint-brush mx-1" id = "css"></i> <em>CSS </em></li>
+        <li><i class="fab fa-js-square mx-1" id = "java"></i> <em>Javascript</em></li>
+        <li><i class="fab fa-react mx-1"></i></i> <em>React</em></li>
+      </ul>
+
+      <ul class="list-inline link-style d-flex justify-content-end pt-2">
+        <li>
+          <a href="images/cv.pdf" download>
+            <h6><i class="fas fa-file"></i></h6>
+          </a>
+        </li>
+        <li>
+          <a href="images/cv.pdf" download>
+            <h6>Download CV</h6>
+          </a>
+        </li>
+      </ul>
+
     </div>
 
-    <div class="card-white">
-      <a href="https://www.youtube.com/watch?v=vunyilw8dtE">
-        <img src="images/giphy.gif" alt="IT ICON" id = "giphy">
-      </a>
-      <p class="text-right">...one day I will be this knowledgeable!</p>
+    <div class="card-white px-2 py-4 m-3">
+      <h2 class="p-4">Web Projects</h2>
+      <nav class="flex-nowrap">
+        <div class="nav request-nav nav-tabs mt-2 d-flex justify-content-start" id="nav-tab" role="tablist">
+          <a class="nav-item request-nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">BetheDJ</a>
+          <a class="nav-item request-nav-item nav-link" id="nav-mister-tab" data-toggle="tab" href="#nav-mister" role="tab" aria-controls="nav-mister" aria-selected="false">MisterCocktail</a>
+          <a class="nav-item request-nav-item nav-link" id="nav-artbnb-tab" data-toggle="tab" href="#nav-artbnb" role="tab" aria-controls="nav-artbnb" aria-selected="false">ArtBnb</a>
+        </div>
+      </nav>
+
+
+      <div class="tab-content" id="nav-tabContent">
+
+        <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+
+          <div class="row p-3">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="carousel slide carousel-fade pt-3" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="images/bedjhome.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/bedjmap.jpg" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/bedjlist.jpg" alt="...">
+              </div>
+               <div class="carousel-item">
+                <img src="images/bedjplay.jpg" alt="...">
+              </div>
+               <div class="carousel-item">
+                <img src="images/bedjevent.jpg" alt="...">
+              </div>
+
+            </div>
+          </div>
+          <p class="pt-2"><em>#ruby #javascript #bootstrap #spotify #mapbox</em></p>
+          </div> <!-- inner-card-item -->
+         <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 pt-2 text-left">
+            <h5 class="pb-2">A mobile web-app for requesting songs in bars and clubs</h5>
+              <h6>Features for Bars:</h6>
+            <ol>
+              <li>It uses Soptify's API to add songs to a playlist's queue and display which song is currently playing</li>
+              <li>Once a song has been added to a playlist's queue, the request button disappears and other users cannot request the same song</li>
+            </ol>
+             <h6>Features for Clubs:</h6>
+            <ol>
+              <li>A DJ can upload their playlist for an event at a certain venue.</li>
+              <li>Clubbers can search through this playlist and can request the songs they want.</li>
+              <li>The DJ has a dashboard where they can see the top requested songs of the night.</li>
+              <li>Once the DJ has played the track, all users will see this on their dashboard and they cannot vote again.</li>
+            </ol>
+          </div> <!-- inner-card-item -->
+
+          </div> <!-- inner-card -->
+
+        </div>
+
+
+
+        <div class="tab-pane fade" id="nav-mister" role="tabpanel" aria-labelledby="nav-mister">
+          <p class="text-left pl-3">On its way!</p>
+        </div>
+
+        <div class="tab-pane fade" id="nav-artbnb" role="tabpanel" aria-labelledby="nav-artbnb">
+            <p class="text-left pl-3">On its way!</p>
+        </div>
+
+
     </div>
+
+
+</div>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
 
