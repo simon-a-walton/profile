@@ -108,11 +108,14 @@ ul.list-inline {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 12px;
   font-size: 12px;
+
 }
+
 
 .request-nav a {
   text-decoration: none;
   color: white;
+  font-family: 'Cabin', sans-serif;
   background-color: #3FB2E4;
   border-radius: 4px;
 }
@@ -130,6 +133,7 @@ ul.list-inline {
     background-color: #E2ACD0;
     box-shadow: 0 0 4px #E2ACD0;
     font-weight: bolder;
+    color: black;
 }
 
 .card-white img {
@@ -148,15 +152,15 @@ a {
   color: black;
 }
 
+.link-style a:hover {
+    color: #3FB2E4;
+    text-decoration: none;
+}
 
 .inner-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100%;
-}
-
-.inner-card-item {
-
 }
 
 
@@ -183,9 +187,8 @@ a {
   }
 }
 
-nav {
-  flex-wrap: nowrap;
-}
+
+
 /*.container {
   margin: 20px auto 20px auto;
   text-align: center;
